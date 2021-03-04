@@ -1,4 +1,4 @@
-{% set version = '0.1' %}
+{% set version = "0.2.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/logger_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/logger/logger_{{ version }}.tar.gz
-  sha256: 5cd1ebf9e84e32d87f331eccf644ef0571bd6fa833f7ce90b2c56254a2f0ee01
+  sha256: 79650eadafaf910e4effe28914a46783aa0a97fce64fe7d1c2065c565957ef05
 
 build:
-  merge_build_host: True  # [win]
-  number: 1
+  merge_build_host: true  # [win]
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -42,7 +42,7 @@ about:
     with low overhead.
   license_family: AGPL
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/AGPL-3'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/AGPL-3
 
 extra:
   recipe-maintainers:
