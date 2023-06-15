@@ -1,11 +1,11 @@
-About r-logger
-==============
+About r-logger-feedstock
+========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-logger-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/daroczig/logger
 
 Package license: AGPL-3.0-only
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-logger-feedstock/blob/main/LICENSE.txt)
 
 Summary: Inspired by the the 'futile.logger' R package and 'logging' Python module, this utility
 provides a flexible and extensible way of formatting and delivering log messages
